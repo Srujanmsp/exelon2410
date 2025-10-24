@@ -34,7 +34,71 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "add user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Sathisha\",\r\n  \"email\": \"sathisha12@gmail.com\",\r\n  \"phone\": \"8310223426\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "190"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"be-qUnxmTzrL9jluWIBcpE378UTcZ0\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Oct 2025 08:14:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Sathisha\",\n    \"email\": \"sathisha12@gmail.com\",\n    \"phone\": \"8310223426\",\n    \"_id\": \"68fb357b752ffb24e49dfca4\",\n    \"createdAt\": \"2025-10-24T08:14:51.285Z\",\n    \"updatedAt\": \"2025-10-24T08:14:51.285Z\",\n    \"__v\": 0\n}"
+				}
+			]
 		},
 		{
 			"name": "Get all Users",
@@ -54,7 +118,62 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Get all Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "387"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"183-G/WQQCTmB5RnpN7ZLxdCt2TfS7s\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Oct 2025 08:15:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68fb319362acf37b28023504\",\n        \"name\": \"Srujan M S\",\n        \"email\": \"srujanms1802@gmail.com\",\n        \"phone\": \"8310275226\",\n        \"createdAt\": \"2025-10-24T07:58:11.345Z\",\n        \"updatedAt\": \"2025-10-24T07:58:11.345Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68fb357b752ffb24e49dfca4\",\n        \"name\": \"Sathisha\",\n        \"email\": \"sathisha12@gmail.com\",\n        \"phone\": \"8310223426\",\n        \"createdAt\": \"2025-10-24T08:14:51.285Z\",\n        \"updatedAt\": \"2025-10-24T08:14:51.285Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
 		}
 	]
 }
