@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "5c939a2d-2221-491c-9318-60bd19cedab3",
+		"name": "Exlon-181025",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49323914",
+		"_collection_link": "https://srujanms1802-5203324.postman.co/workspace/Srujan-M-S's-Workspace~0dc67352-8208-4583-8327-4a42687456dc/collection/49323914-5c939a2d-2221-491c-9318-60bd19cedab3?action=share&source=collection_link&creator=49323914"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Srujan M S\",\r\n  \"email\": \"srujanms1802@gmail.com\",\r\n  \"phone\": \"8310275226\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
